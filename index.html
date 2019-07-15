@@ -1,46 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
+
+    <!-- Redirects to resume -->
     <meta http-equiv="refresh" content="0; url=Resume7.pdf" />
-    <!-- <meta http-equiv="refresh" content="0; url=Resume7.pdf" /> -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Damandeep Singh Bawa">
-    <meta name="description" content="A personal website of me (Daman). Come here and learn more.">
-    <meta name="keywords" content="Damandeep,Singh,Bawa,Python,Developer,Student,Coop">
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Damandeep Singh Bawa" />
+
+    <meta
+      name="description"
+      content="A personal website of me (Daman). Come here and learn more."
+    />
+
+    <meta
+      name="keywords"
+      content="Damandeep,Singh,Bawa,Python,Developer,Student,Coop"
+    />
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <style>
-        body {
-            background-color: black;
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
 
-            grid-template: 1fr auto 1fr / 1fr auto 1fr;
-            grid-template-areas:
-                ". . ."
-                ". p ."
-                ". . .";
-        }
+        background-color: black;
 
-        a {
-            display: block;
+        display: grid;
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-areas:
+          ". . ."
+          ". a ."
+          ". . .";
+      }
 
-            text-decoration: None;
-            color: white;
-        }
+      a {
+        grid-area: a;
 
-        p{
-            grid-area: p;
-
-            display: block;
-            border-radius: 10%;
-            width: 50vw;
-            height: 50vh;
-
-            background-color: #555;
-            text-align: center;
-        }
+        width
+      }
     </style>
   </head>
   <body>
-    <p><a href="Resume7.pdf">Resume</a></p>
+    <a class="btn btn-light" href="Resume7.pdf">Resume</a>
   </body>
 </html>
